@@ -28,6 +28,7 @@ var derKeyWorte = {
   'aufs ': 'auf der',
   'computer': 'kombjudoor',
   'Auto': 'Autowagen',
+  'handy': 'handymobil',
   '!': '! yipyipyip!'
 }
 
