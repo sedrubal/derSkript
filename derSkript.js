@@ -25,6 +25,7 @@ var derKeyWorte = {
   'diesen ': 'dem ',
   'diesem ': 'dem ',
   'für (?!der)': 'für der ',
+  'aufs ': 'auf der',
   'computer': 'kombjudoor',
   'auto ': 'autowagen '
 }
