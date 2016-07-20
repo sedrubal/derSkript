@@ -27,7 +27,8 @@ var derKeyWorte = {
   'für (?!der)': 'für der ',
   'aufs ': 'auf der',
   'computer': 'kombjudoor',
-  'auto ': 'autowagen '
+  'Auto': 'Autowagen',
+  '!': '! yipyipyip!'
 }
 
 /* der Text Knoten zurueckbekommen */
