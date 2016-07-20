@@ -57,22 +57,17 @@ function capitalize(str) {
   return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-/* der Text ersetzen */
-function derReplace(from, to){
-  getAllTextNodes().forEach(function(node){
-    node.nodeValue = node.nodeValue.replace(new RegExp(quote(' '+from), 'g'), ' '+to);
-    node.nodeValue = node.nodeValue.replace(new RegExp(capitalize(quote(from)), 'g'), capitalize(to));
-  });
-}
-
 /* der Funktion */
 function derFunktion() {
-  for (var der in derKeyWorte) {
-    if (derKeyWorte.hasOwnProperty(der)) {
-      var derKapott = derKeyWorte[der];
-      derReplace(der, derKapott);
+  getAllTextNodes().forEach(function(node){
+    for (var der in derKeyWorte) {
+      if (derKeyWorte.hasOwnProperty(der)) {
+        var derKapott = derKeyWorte[der];
+        node.nodeValue = node.nodeValue.replace(new RegExp(quote(' '+der), 'g'), ' '+derKapott);
+        node.nodeValue = node.nodeValue.replace(new RegExp(capitalize(quote(der)), 'g'), capitalize(derKapott));
+      }
     }
-  }
+  });
 }
 
 derFunktion();
