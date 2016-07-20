@@ -1,5 +1,6 @@
 var derKeyWorte = {
   'die ': 'der ',
+  'des ': 'der ',
   'das ': 'der ',
   'zum ': 'zu der ',
   'zur ': 'zu der ',
